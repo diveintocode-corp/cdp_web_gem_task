@@ -6,6 +6,7 @@
   <thead>
     <tr>
       <th>Title</th>
+      <th>description</th>
       <th>Status</th>
       <th>Deadline</th>
       <th colspan="3"></th>
@@ -16,6 +17,7 @@
     <% @tasks.each do |task| %>
       <tr>
         <td><%= task.title %></td>
+        <td><%= task.description %></td>
         <td><%= task.status %></td>
         <td><%= task.deadline.strftime("%Y-%m-%d %H:%M") %></td>
         <td><%= link_to 'Show', task %></td>

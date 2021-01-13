@@ -1,7 +1,7 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+status=["todo","doing","done"]
+def time_rand from = 0.0, to = Time.now
+  Time.at(from + rand * (to.to_f - from.to_f))
+end
+50.times do |n|
+  Task.create!(title:"タスク#{n+1}",description:"タスク#{n+1}の内容",status:status.sample,deadline:time_rand(Time.local(2010, 1, 1)))
+end
