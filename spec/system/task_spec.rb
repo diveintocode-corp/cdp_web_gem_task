@@ -72,7 +72,7 @@ RSpec.describe do
         expect(page).not_to have_content 'タスク4'
       end
     end
-    describe '5.期間の検索範囲は開始期限以上、終了期限以下であること' do
+    describe '5.指定した年月日以上・以下を検索範囲とすること' do
       it '_gteqと_lteqが使用されていること' do
         visit tasks_path
         expect(page).to have_selector '#q_deadline_gteq'
@@ -133,7 +133,7 @@ RSpec.describe do
         expect(find("#q_status_eq_")).to be_checked
       end
     end
-    describe '9.キーワード、期限、ステータスの複数の条件による検索が正常に機能すること' do
+    describe '9.複数条件による検索が正常に機能すること' do
       it 'キーワードと開始期限による検索が正常に機能する' do
         visit tasks_path
         find('input[type="search"]').set('タスク1')
