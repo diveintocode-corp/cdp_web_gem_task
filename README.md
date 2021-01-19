@@ -1,20 +1,24 @@
-# タスク管理用のアプリケーション
+# README
 
-このアプリケーションでは、タイトルや説明文、ステータスや期限などのタスク情報を登録できます。
+This README would normally document whatever steps are necessary to get the
+application up and running.
 
-タスクにはタイトルと期限の必須入力と、期限が今日以降であることのバリデーションがあります。
-[![Image from Gyazo](https://t.gyazo.com/teams/diveintocode/844628817228920f718b1e9963fe671e.gif)](https://diveintocode.gyazo.com/844628817228920f718b1e9963fe671e)
+Things you may want to cover:
 
-## 環境構築用コマンド
-```bash
-bundle install
-yarn install
-rails db:migrate
-```
+* Ruby version
 
-## 使用バージョン
-```
-Rails 6.0.3
-Ruby 2.6.5
-Node.js 14.4.0
-```
+* System dependencies
+
+* Configuration
+
+* Database creation
+
+* Database initialization
+
+* How to run the test suite
+
+* Services (job queues, cache servers, search engines, etc.)
+
+* Deployment instructions
+
+* ...
